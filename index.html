@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentagem</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Cálculos de porcentagem de forma fácil</h1>
@@ -15,13 +16,33 @@
         <input type="number" id="valor" placeholder="Valor desejado">
         <h4>Insira o valor da porcentagem</h4>
         <input type="number" id="porcentagem" placeholder="Valor da porcentagem desejada">
+        <br>
         <button onclick="calcularPorcentagem()">Calcular</button>
-        <h4 id="resultado"></h4>            
+        <div id="apresentarResultado">
+            <p>
+                <span id="apresentarPorcentagem"></span>% de
+                <span id="apresentarValor"></span> corresponde a
+                <span id="resultado"></span>
+            </p>
+        </div>            
     </div>
 
     <h3>Eu quero saber qual o desconto de um produto</h3>
     <div>
-        
+        <h4>Insira o valor total do produto</h4>
+        <input type="number" id="valorProduto" placeholder="Valor do produto">
+        <h4>Insira a porcentagem do desconto</h4>
+        <input type="number" id="porcentagemDesconto" placeholder="Valor da porcentagem desejada">
+        <br>
+        <button onclick="calcularDesconto()">Calcular</button>
+        <div id="apresentarValorComDesconto">
+            <p>
+                O valor de
+                <span id="apresentarValorProduto"></span> com desconto de 
+                <span id="apresentarDesconto"></span>% corresponde a
+                <span id="valorFinal"></span>
+            </p>
+        </div>            
     </div>
 
     <script src="script.js"></script>

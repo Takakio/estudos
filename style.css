@@ -1,0 +1,11 @@
+#apresentarResultado, #apresentarValorComDesconto{
+    display: none;
+}
+
+#apresentarResultado div{
+    white-space: nowrap;
+}
+
+#apresentarResultado span {
+    font-weight: bolder;
+}
