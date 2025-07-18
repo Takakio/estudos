@@ -1,3 +1,11 @@
+body{
+    text-align: center;
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #apresentarResultado, #apresentarValorComDesconto{
     display: none;
 }
@@ -6,6 +14,63 @@
     white-space: nowrap;
 }
 
-#apresentarResultado span {
+#apresentarResultado, span {
     font-weight: bolder;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.porcentagem {
+    background-color: #a5f3ff;
+    border-radius: 10px;
+    padding: 7px 0px 22px 0px;
+}
+
+.desconto {
+    background-color: #c3ffa5;
+    border-radius: 10px;
+    padding: 7px 0px 22px 0px;
+}
+
+button{ 
+    background-color: #3498db;   
+    color: white;               
+    border: none;               
+    padding: 12px 24px;        
+    border-radius: 8px;         
+    font-size: 16px;            
+    cursor: pointer;           
+    transition: background-color 0.3s ease;
+    margin-top: 17px;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
+
+button:active{
+    background-color: #2471a3;
+}
+
+input {
+    padding: 12px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 250px;
+    transition: 0.3s;
+    outline: none;
+}
+
+input:focus{
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+h4{
+    font-size: large;
+}
+
+h3{
+    padding-bottom: 20px;
 }

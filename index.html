@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentagem</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cálculos de porcentagem de forma fácil</h1>
+    <h1>Calculadora de porcentagem</h1>
 
-    <h2>Porcentagem</h2>
-    <h3>Eu quero saber qual a porcentagem de determinado valor</h3>
-    <div>
+    <div class="porcentagem">
+        <h3>Eu quero saber qual a porcentagem de determinado valor:</h3>
         <h4>Insira o valor</h4>
         <input type="number" id="valor" placeholder="Valor desejado">
         <h4>Insira o valor da porcentagem</h4>
@@ -27,8 +29,9 @@
         </div>            
     </div>
 
-    <h3>Eu quero saber qual o desconto de um produto</h3>
-    <div>
+    <div class="desconto">
+        <h3>Eu quero saber qual o desconto de um produto:</h3>
+    
         <h4>Insira o valor total do produto</h4>
         <input type="number" id="valorProduto" placeholder="Valor do produto">
         <h4>Insira a porcentagem do desconto</h4>
@@ -41,6 +44,8 @@
                 <span id="apresentarValorProduto"></span> com desconto de 
                 <span id="apresentarDesconto"></span>% corresponde a
                 <span id="valorFinal"></span>
+                <br>
+                E o valor do desconto aplicado é de <span id="valorDesconto"></span>
             </p>
         </div>            
     </div>
